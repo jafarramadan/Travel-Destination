@@ -17,11 +17,6 @@ function Home(){
                 })
             }
 
-
-
-
-
-
         <Footer/>
         </>
     )
