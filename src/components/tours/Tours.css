@@ -1,0 +1,33 @@
+.tours-container {
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tours-container:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.tours-container h2 {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.tours-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.tours-container:hover h2 {
+    background-color: #ddd; 
+}
