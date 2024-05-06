@@ -1,11 +1,21 @@
-
+import Tour from '../tours/tour/Tour.js';
 import './Tours.css';
+const tourData = require('../../data/db.json')
 
-function Tours(props) {
+
+
+function Tours() {
     return (
-        <div className="tours-container">
-            <h2>{props.tourName}</h2>
-            <img src={props.tourImage} alt="tour image" />
+        <div >
+            {
+                tourData.map(e => {
+                    return (
+                        <Tour id={e.id} tourName={e.name} tourImage={e.image} />
+                    )
+                })
+            }
+
+
         </div>
     );
 }
